@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
+</script>
+
 <template>
-<h1>Hello World</h1>
+<LinkyProfilePicture />
 </template>
