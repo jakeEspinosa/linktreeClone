@@ -3,5 +3,5 @@ import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
 </script>
 
 <template>
-<LinkyProfilePicture />
+<LinkyProfilePicture image-url="src/assets/images/Espinosa.jpg"/>
 </template>

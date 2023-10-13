@@ -1,5 +1,11 @@
+<script lang="ts" setup>
+const props = defineProps({
+  imageUrl: String,
+});
+</script>
+
 <template>
-  <img src="@/assets/images/Espinosa.jpg" />
+  <img :src="props.imageUrl" />
 </template>
 
 <style scoped>
