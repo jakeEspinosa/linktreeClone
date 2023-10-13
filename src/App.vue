@@ -19,26 +19,16 @@ import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
 </template>
 
 <style scoped>
-.pfp, .main, .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .pfp {
   padding-top: 1rem;
-  height: 20%;
 }
 
 .main {
   min-height: 75%;
-  flex-direction: column;
   padding-top: 1rem;
-  gap: 1.5rem;
 }
 
 .footer {
   height: 10%;
-  margin-top: auto;
 }
 </style>
