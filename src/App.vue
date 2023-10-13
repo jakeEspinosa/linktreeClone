@@ -3,7 +3,6 @@ import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
 </script>
 
 <template>
-  <div class="container">
     <div class="pfp">
         <LinkyProfilePicture image-url="src/assets/images/Espinosa.jpg"/>
     </div>
@@ -17,19 +16,13 @@ import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
     <footer class="footer">
       <h2>footer</h2>
     </footer>
-  </div>
 </template>
 
 <style scoped>
-.pfp, .main, .footer, .container {
+.pfp, .main, .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.container {
-  height: 100%;
-  flex-direction: column;
 }
 
 .pfp {
@@ -46,5 +39,6 @@ import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
 
 .footer {
   height: 10%;
+  margin-top: auto;
 }
 </style>
