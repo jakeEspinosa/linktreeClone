@@ -10,8 +10,8 @@ const props = defineProps({
 
 <style scoped>
 img {
-  width: 10rem;
-  height: 10rem;
+  width: 7.5rem;
+  height: 7.5rem;
   border-radius: 100%;
   filter: drop-shadow(0 0 0.25rem #E5EAF5);
 }
