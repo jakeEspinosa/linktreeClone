@@ -5,7 +5,7 @@ import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
 <template>
   <header class="header">
     <LinkyProfilePicture image-url="src/assets/images/Espinosa.jpg"/>
-    <h1>Short description</h1>
+    <h1>Full stack software engineer with a passion for accessibility</h1>
 </header>
   <main class="main">
     <button>buttons</button>
@@ -14,7 +14,7 @@ import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
     <button>buttons</button>
   </main>
   <footer class="footer">
-    <h2>footer</h2>
+    <h2>© 2023 Espinosa Enterprises, LLC. All Rights Reserved.</h2>
   </footer>
 </template>
 
@@ -26,14 +26,34 @@ import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
 }
 
 .header {
-  height: 22dvh;
+  height: 30dvh;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .main {
-  min-height: 68dvh;
+  min-height: 60dvh;
 }
 
 .footer {
   height: 10dvh;
+}
+h1, h2 {
+  width: 40ch;
+  text-align: center;
+  font-style: italic;
+  color: white;
+}
+
+button {
+  color: white;
+  background-color: #7E04E9;
+  width: 40ch;
+  border-radius: 10px;
+  height: 10ch;
+}
+
+button:hover {
+  transform:scale(1.1,1.1);
 }
 </style>
