@@ -3,46 +3,37 @@ import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
 </script>
 
 <template>
-  <div class="grid">
-    <div class="pfp">
-        <LinkyProfilePicture image-url="src/assets/images/Espinosa.jpg"/>
-    </div>
-    <main class="main">
-      <h1>Short description</h1>
-      <button>buttons</button>
-      <button>buttons</button>
-      <button>buttons</button>
-      <button>buttons</button>
-    </main>
-    <footer class="footer">
-      <h2>footer</h2>
-    </footer>
-  </div>
+  <header class="header">
+    <LinkyProfilePicture image-url="src/assets/images/Espinosa.jpg"/>
+    <h1>Short description</h1>
+</header>
+  <main class="main">
+    <button>buttons</button>
+    <button>buttons</button>
+    <button>buttons</button>
+    <button>buttons</button>
+  </main>
+  <footer class="footer">
+    <h2>footer</h2>
+  </footer>
 </template>
 
 <style scoped>
-.grid {
-  height: 100%;
-  display: grid;
-  grid-template-areas: "header"
-                       "main"
-                       "footer";
+.header, .main, .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.pfp {
-  grid-area: "header";
-  padding-top: 1rem;
-  height: 90%;
+.header {
+  height: 22dvh;
 }
 
 .main {
-  grid-area: "main";
-  min-height: 75%;
-  padding-top: 1rem;
+  min-height: 68dvh;
 }
 
 .footer {
-  grid-area: "footer";
-  height: 10%;
+  height: 10dvh;
 }
 </style>
