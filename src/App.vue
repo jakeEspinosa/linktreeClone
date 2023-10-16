@@ -26,13 +26,13 @@ import LinkyButtonLink from "@/components/LinkyButtonLink.vue";
 }
 
 .header {
-  height: 30dvh;
+  min-height: 35dvh;
   justify-content: center;
   gap: 1rem;
 }
 
 .main {
-  min-height: 60dvh;
+  min-height: 55dvh;
   gap: 1.5rem;
 }
 
@@ -40,9 +40,9 @@ import LinkyButtonLink from "@/components/LinkyButtonLink.vue";
   height: 10dvh;
 }
 h1, h2 {
-  width: 40ch;
   text-align: center;
   font-style: italic;
   color: #f5e9e2;
+  word-wrap: break-word;
 }
 </style>
