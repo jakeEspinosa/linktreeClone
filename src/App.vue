@@ -6,7 +6,7 @@ import LinkyButtonLink from "@/components/LinkyButtonLink.vue";
 <template>
   <header class="header">
     <LinkyProfilePicture image-url="src/assets/images/Espinosa.jpg"/>
-    <h1>Full stack software engineer passionate about learning</h1>
+    <h1>Full stack software engineer passionate about accesibility</h1>
 </header>
   <main class="main">
     <LinkyButtonLink :label="'Blog'" :link="'https://www.jakeespinosa.com/blog'" />
