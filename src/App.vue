@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
+import LinkyButtonLink from "@/components/LinkyButtonLink.vue";
 </script>
 
 <template>
@@ -8,21 +9,9 @@ import LinkyProfilePicture from "@/components/LinkyProfilePicture.vue";
     <h1>Full stack software engineer passionate about learning</h1>
 </header>
   <main class="main">
-    <a href="https://www.jakeespinosa.com/blog" target="_blank">
-      <button>
-        Blog
-      </button>
-    </a>
-    <a href="https://github.com/jakeEspinosa" target="_blank">
-      <button>
-        GitHub
-      </button>
-    </a>
-    <a href="https://www.linkedin.com/in/jake-espinosa/" target="_blank">
-      <button>
-        LinkedIn
-      </button>
-    </a>
+    <LinkyButtonLink :label="'Blog'" :link="'https://www.jakeespinosa.com/blog'" />
+    <LinkyButtonLink :label="'GitHub'" :link="'https://github.com/jakeEspinosa'" />
+    <LinkyButtonLink :label="'LinkedIn'" :link="'https://www.linkedin.com/in/jake-espinosa/'" />
   </main>
   <footer class="footer">
     <h2>© 2023 Espinosa Enterprises, LLC. All Rights Reserved.</h2>
@@ -55,17 +44,5 @@ h1, h2 {
   text-align: center;
   font-style: italic;
   color: #f5e9e2;
-}
-
-button {
-  color: #0b0014;
-  background-color: #f5e9e2;
-  width: 40ch;
-  border-radius: 10px;
-  height: 10ch;
-}
-
-button:hover {
-  transform:scale(1.1,1.1);
 }
 </style>
