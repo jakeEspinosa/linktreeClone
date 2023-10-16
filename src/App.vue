@@ -5,7 +5,7 @@ import LinkyButtonLink from "@/components/LinkyButtonLink.vue";
 
 <template>
   <header class="header">
-    <LinkyProfilePicture image-url="src/assets/images/Espinosa.jpg"/>
+    <LinkyProfilePicture image-url="src/assets/images/Espinosa.jpg" :alt-text="'Profile picture'" />
     <h1>Full stack software engineer passionate about accesibility</h1>
 </header>
   <main class="main">

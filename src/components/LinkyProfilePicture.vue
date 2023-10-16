@@ -1,11 +1,12 @@
 <script lang="ts" setup>
 const props = defineProps({
   imageUrl: String,
+  altText: String,
 });
 </script>
 
 <template>
-  <img :src="props.imageUrl" />
+  <img :src="props.imageUrl" :alt="props.altText" />
 </template>
 
 <style scoped>
